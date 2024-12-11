@@ -1,0 +1,95 @@
+@import url(common.css);
+
+/* flexbox親 */
+main form div.flex {
+  display: flex;
+  border: 2px solid #4a4a4a;
+  text-align: left;
+  padding: 40px 95px 10px 95px;
+  margin-bottom: 10px;
+  gap: 30px;
+}
+main div.flex fieldset legend {
+  color: #1d1502;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+main div.flex fieldset {
+  padding-bottom: 30px;
+}
+
+/* flexbox子,幅 */
+main div.flex div.left {
+  flex: 1;
+}
+main div.flex div.right {
+  flex: 1;
+}
+
+/* テキストボックスを伸ばす */
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main textarea {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
+main textarea {
+  height: 294px;
+  resize: vertical;
+}
+/* *は必須項目です。 */
+main form aside p {
+  color: #1d1502;
+  text-align: right;
+  padding-bottom: 20px;
+}
+/* 送信ボタン */
+main form button {
+  padding: 16.5px 62px;
+  margin-bottom: 67px;
+  color: #fffdf8;
+  background-color: #6b5311;
+  border: none;
+  cursor: pointer;
+}
+main form button:hover {
+  opacity: 0.7;
+}
+/* 個人情報保護方針 */
+main aside.personal {
+  background-color: #6b5311;
+  color: #fff;
+  font-size: 16px;
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 13px 30px;
+  margin-bottom: 82px;
+}
+main aside.personal h2 {
+  padding-bottom: 6px;
+}
+main aside.personal p {
+  text-align: left;
+}
+
+/* ---------------
+レスポンシブ
+---------------- */
+/* main div.flex fieldsetにpadding-bottom: 30px;
+その分を引く */
+
+/* タブレット */
+@media (max-width: 991px) {
+  main form div.flex {
+    padding: 40px 60px 10px;
+  }
+}
+/* スマホ */
+@media (max-width: 776px) {
+  main form div.flex {
+    display: block;
+    padding: 30px 30px 0px;
+  }
+}

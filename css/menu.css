@@ -1,0 +1,98 @@
+@import url(common.css);
+
+/* -------------
+メイン
+---------------- */
+/* main article h1 {
+  color: #1d1502;
+  font-size: 40px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: bold;
+  background-image: url(../img/menuLogo.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 31px;
+  padding-bottom: 57px;
+  margin-bottom: 67px;
+} →common.cssへ移動*/
+
+main section {
+  border: #4a4a4a 2px solid;
+  padding-top: 44px;
+  margin-bottom: 67px;
+}
+main section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #54410c;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* background-color: aqua; */
+  padding-top: 22px;
+  padding-bottom: 48px;
+  margin-bottom: 23px;
+}
+
+main section p.introduction {
+  color: #1d1502;
+  text-align: left;
+  font-size: 18px;
+  /* padding-bottom: 12px; */
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+  padding: 0px 30px 12px;
+  /* 0pxのときは0でも可 */
+}
+
+main section p.price {
+  font-size: 24px;
+  color: #54410c;
+  padding-bottom: 19px;
+}
+
+main section p.homelink a {
+  color: #fffdf8;
+  font-size: 18px;
+  background-color: #6b5311;
+  padding: 16.5px;
+  /* paddingは左右も16.5pxに設定されているが、中央揃えのため見えないだけ */
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+
+main section p.homelink a:hover {
+  opacity: 0.7;
+}
+
+/*-----------
+ 0830課題
+ ------------ */
+
+/* flexboxのコンテナ */
+main article div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+}
+/* アイテムの幅 */
+main article section {
+  flex-basis: 47.4%;
+}
+
+/*----------------
+ レスポンシブ
+ ----------------- */
+/* タブレット */
+@media (max-width: 991px) {
+  main article div {
+    display: block;
+  }
+}
+/* スマホ */

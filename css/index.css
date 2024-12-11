@@ -1,0 +1,58 @@
+@import url(common.css);
+p.visual {
+  padding-bottom: 67px;
+}
+/* main section.lounge li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+main section.lounge ul {
+  padding-bottom: 67px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+main section h2 {
+  color: #1d1502;
+  font-size: 28px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: bold;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
+main section.lounge p {
+  text-align: left;
+  line-height: 35px;
+  padding-bottom: 50px;
+}
+
+main section.lounge {
+  border-bottom: #000 3px solid;
+  margin-bottom: 67px;
+}
+main section.ivent li {
+  padding-bottom: 50px;
+}
+main section.ivent {
+  border-bottom: #000 3px solid;
+  margin-bottom: 67px;
+}
+
+/*----------------
+ レスポンシブ
+ ----------------- */
+/* スマホ */
+@media (max-width: 767px) {
+  p.visual img {
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+  }
+}
